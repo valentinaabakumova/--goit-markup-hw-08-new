@@ -880,9 +880,15 @@ img {
 
 .section-work-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   margin-bottom: 50px;
   /* margin-top: 94px; */
+  margin-left: 20px;
+}
+
+.section-item {
+  margin-bottom: 10px;
 }
 
 .section-item:not(:last-child) {

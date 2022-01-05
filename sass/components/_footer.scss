@@ -7,6 +7,9 @@
   /* padding-top: 60px; */
   /* padding-bottom: 20px; */
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .address-list {
@@ -20,6 +23,15 @@
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+}
+
+.footer__first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -58,12 +70,16 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  // align-items: center;
 }
 
 .footer__second {
-  margin-left: 70px;
+  margin-top: 50px;
+  // margin-left: 70px;
   justify-content: center;
   align-items: center;
   /* padding-top: 12px; */
@@ -118,9 +134,13 @@
 // footer 2
 
 .footer__third {
-  margin-left: 93px;
+  margin-top: 50px;
+  // margin-left: 93px;
   display: flex;
   /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .footer-label {
   font-weight: bold;

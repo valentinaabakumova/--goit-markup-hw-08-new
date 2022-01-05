@@ -11,17 +11,16 @@
 }
 
 .benef__title {
-  display: flex;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color_second);
-
-  margin-bottom: 10px;
-
-  justify-content: center;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benef__text {
@@ -49,4 +48,39 @@
 
   margin-bottom: 30px;
   width: 100%;
+}
+
+/////////////
+
+.benef__item:not(:last-child) {
+  /* width: 270px;
+  height: 101px; */
+  // margin-right: 30px;
+  margin-bottom: 25px;
+}
+
+.benef__title {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color_second);
+
+  margin-bottom: 10px;
+
+  justify-content: center;
+
+  // width: 100%;
+}
+
+.benef__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color_first);
+  letter-spacing: 0.03em;
+
+  // width: 100%;
 }

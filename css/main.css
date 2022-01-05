@@ -32,7 +32,7 @@ a {
 
 .container {
   /* display: flex; */
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -240,15 +240,16 @@ img {
 }
 
 .benef__title {
-  display: flex;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color_second);
-  margin-bottom: 10px;
-  justify-content: center;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benef__text {
@@ -270,6 +271,32 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
   width: 100%;
+}
+
+.benef__item:not(:last-child) {
+  /* width: 270px;
+  height: 101px; */
+  margin-bottom: 25px;
+}
+
+.benef__title {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color_second);
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.benef__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color_first);
+  letter-spacing: 0.03em;
 }
 
 .section--no-padding-top {
@@ -323,15 +350,12 @@ img {
   align-items: center;
 }
 
-.team {
-  display: flex;
-}
-
 .section--other-background {
   background-color: #f5f4fa;
 }
 
 .team__item {
+  margin-bottom: 25px;
   background-color: var(--coolor_title);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -339,11 +363,7 @@ img {
 
 .team__item img {
   width: 270px;
-  height: 260px;
-}
-
-.team__item:not(:last-child) {
-  margin-right: 30px;
+  height: auto;
 }
 
 .team__header {
@@ -414,7 +434,7 @@ img {
 
 .client__title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
@@ -425,6 +445,7 @@ img {
 .clients {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .clients__item {
@@ -434,6 +455,14 @@ img {
 
 .clients__item + .clients__item {
   margin-left: 30px;
+}
+
+.clients__item:nth-child(2n + 1) {
+  margin-left: 0;
+}
+
+.clients__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .clients__link {

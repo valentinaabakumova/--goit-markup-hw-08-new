@@ -9,7 +9,6 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .address-list {
@@ -31,11 +30,26 @@
 .footer__first {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+
+  @media screen and (min-width: 480px) {
+    display: inline-block;
+  }
+}
+
+.fotfirstsec {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .footer-logo {
   color: #fff;
+  @media screen and (min-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .gorod {
@@ -141,6 +155,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer-label {
   font-weight: bold;
@@ -195,6 +215,11 @@
   padding-left: 29px;
 
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .fly-icon {

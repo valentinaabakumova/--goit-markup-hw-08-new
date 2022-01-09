@@ -55,6 +55,16 @@ a {
   }
 }
 
+.section {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 :root {
   --color_first: #757575;
   --color_second: #212121;
@@ -214,10 +224,6 @@ img {
   text-transform: uppercase;
 }
 
-.section {
-  padding: 94px 0;
-}
-
 .hero__btn {
   font-weight: 700;
   font-size: 16px;
@@ -245,6 +251,18 @@ img {
   background-size: cover;
   max-width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_mob.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg.jpg);
+  }
 }
 
 .benef {
@@ -1182,6 +1200,9 @@ position: absolute !important;
   .work-pic-item {
     margin-bottom: 30px;
     margin-right: 30px;
+    width: calc(100% / 2 -30px);
+    display: flex;
+    flex-wrap: wrap;
   }
   .work-pic-item:nth-child(2n + 1) {
     margin-left: 0;

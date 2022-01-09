@@ -10,9 +10,6 @@
   // margin-left: auto;
   // margin-right: auto;
 }
-.section {
-  padding: 94px 0;
-}
 
 .hero__btn {
   font-weight: 700;
@@ -48,4 +45,20 @@
   max-width: 100%;
   // min-width: 480px;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero_mob.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero_bg.jpg);
+  }
 }

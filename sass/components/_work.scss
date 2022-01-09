@@ -164,6 +164,7 @@ position: absolute !important;
   position: relative;
 
   @media screen and (min-width: 480px) {
+    // width: 480px;
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -171,6 +172,10 @@ position: absolute !important;
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     margin-right: 30px;
+
+    width: calc(100% / 2 -30px);
+    display: flex;
+    flex-wrap: wrap;
 
     &:nth-child(2n + 1) {
       margin-left: 0;

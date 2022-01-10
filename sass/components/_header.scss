@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   align-items: center;
   // width: 480px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .header-connect {
@@ -15,13 +19,21 @@
 }
 
 .header-list-call {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-
   display: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -44,7 +56,26 @@
 }
 
 .header-list-call-item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+
+.header-list-call-item {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .logo {
@@ -119,6 +150,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .header-icon {

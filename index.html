@@ -28,6 +28,11 @@
           Studio
         </a>
 
+
+  <!-- <button class="open-menu-btn">O</button>  -->
+
+
+
         <nav class="header-navigation">
           <ul class="header-list list">
             <li class="header-item">
@@ -64,17 +69,30 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>   
-          <button class="open-menu-btn">O</button> 
+        </ul>     
+
+
+     
+        <button class="open-menu-btn">
+          <svg class="mob-open-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-mob-open"></use>
+          </svg>
+      </button>  
+
+
       </div>
-   
+      
 <!-- mob header -->
-<div class="mob-menu ">
+<div class="mob-menu is-hidden">
 
   <div class="container">
  
-<button class="close-menu-btn">x</button>
-<div class="mob-top ">
+    <button class="close-menu-btn">
+                <svg class="mob-close-icon" width="27" height="27">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+    </button>
+      <div class="mob-top">
           <ul class="mob-menu-list list">
             <li class="mob-menu-item">
               <a class="mob-menu-link link active-page current" href="#Студия">
@@ -88,17 +106,17 @@
               <a class="mob-menu-link link" href="#Контакты">Контакты</a>
             </li>
           </ul>
-</div>
-<div class="mob-bottom">
+    </div>
+       <div class="mob-bottom">
           <ul class="mob-menu-call list">
           <li class="mob-menu-list-call-item">
-            <a class="mob-menu-link-call link telef" href="tel:+380961111111">
+            <a class="mob-menu-link-call link mob-tel" href="tel:+380961111111">
               +38 096 111 11 11
             </a>
           </li>
           <li class="mob-menu-list-call-item">
             <a
-              class="mob-menu-link-call link mail"
+              class="mob-menu-link-call link mob-mail"
               href="mailto:info@example.com"
             >
               info@devstudio.com
@@ -141,8 +159,8 @@
           </li>
          
         </ul>
-</div>
-</div>
+        </div>
+  </div>
 </div>
     </header>
     <main>

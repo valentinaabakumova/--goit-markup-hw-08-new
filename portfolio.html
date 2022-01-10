@@ -21,55 +21,128 @@
   </head>
   <body>
     <header>
-      <div class="wrap">
-        <div class="container header-container">
-          <a href="" class="logo link">
-            <span class="logo_first">Web</span>
-            Studio
-          </a>
+      <div class="container header-container">
+        <a href="" class="logo link">
+          <span class="logo_first">Web</span>
+          Studio
+        </a>
 
-          <nav class="header-navigation">
-            <ul class="header-list list">
-              <li class="header-item">
-                <a class="header-link link no-active-page" href="./index.html">
+        <!-- <button class="open-menu-btn">O</button>  -->
+
+        <nav class="header-navigation">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link no-active-page" href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link active-page current" href="#Портфолио">
+                Портфолио
+              </a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#Контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-list-call list">
+          <li class="header-list-call-item">
+            <a
+              class="header-link-call link mail hlci"
+              href="mailto:info@example.com"
+            >
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-list-call-item">
+            <a class="header-link-call link tel hlci" href="tel:+380961111111">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+
+        <button class="open-menu-btn">
+          <svg class="mob-open-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-mob-open"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mob header -->
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <button class="close-menu-btn">
+            <svg class="mob-close-icon" width="27" height="27">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mob-top">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a
+                  class="mob-menu-link link active-page current"
+                  href="#Студия"
+                >
                   Студия
                 </a>
               </li>
-              <li class="header-item">
-                <a
-                  class="header-link link active-page current"
-                  href="#Портфолио"
-                >
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html">
                   Портфолио
                 </a>
               </li>
-              <li class="header-item">
-                <a class="header-link link" href="#Контакты">Контакты</a>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#Контакты">Контакты</a>
               </li>
             </ul>
-          </nav>
-          <div class="header-connect">
-            <ul class="header-list-call list">
-              <li class="header-list-call-item">
+          </div>
+          <div class="mob-bottom">
+            <ul class="mob-menu-call list">
+              <li class="mob-menu-list-call-item">
                 <a
-                  class="header-link-call link mail hlci"
+                  class="mob-menu-link-call link mob-tel"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-menu-list-call-item">
+                <a
+                  class="mob-menu-link-call link mob-mail"
                   href="mailto:info@example.com"
                 >
-                  <svg class="header-icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-email"></use>
-                  </svg>
                   info@devstudio.com
                 </a>
               </li>
-              <li class="header-list-call-item">
-                <a
-                  class="header-link-call link tel hlci"
-                  href="tel:+380961111111"
-                >
-                  <svg class="header-icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-tel"></use>
-                  </svg>
-                  +38 096 111 11 11
+            </ul>
+
+            <ul class="mob-social-list list">
+              <li class="mob-social-item">
+                <a class="mob-social-link link" href="">
+                  Instagram
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a class="mob-social-link link" href="">
+                  Twitter
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a class="mob-social-link link" href="">
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a class="mob-social-link link" href="">
+                  LinkedIn
                 </a>
               </li>
             </ul>

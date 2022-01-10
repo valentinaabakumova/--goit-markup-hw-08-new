@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,15 +88,15 @@
           <div class="mob-top">
             <ul class="mob-menu-list list">
               <li class="mob-menu-item">
-                <a
-                  class="mob-menu-link link active-page current"
-                  href="#Студия"
-                >
+                <a class="mob-menu-link link" href="./index.html">
                   Студия
                 </a>
               </li>
               <li class="mob-menu-item">
-                <a class="mob-menu-link link" href="./portfolio.html">
+                <a
+                  class="mob-menu-link link active-page mob-current"
+                  href="#Портфолио"
+                >
                   Портфолио
                 </a>
               </li>
@@ -140,7 +141,7 @@
                   Facebook
                 </a>
               </li>
-              <li class="mob-social-item">
+              <li class="mob-social-item last">
                 <a class="mob-social-link link" href="">
                   LinkedIn
                 </a>
@@ -150,6 +151,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="section section-work">
         <div class="work-container container">
@@ -174,6 +176,8 @@
               <button type="button" class="section-work-link">Маркетинг</button>
             </li>
           </ul>
+
+          <!-- pictures -->
 
           <ul class="work-pic-list list">
             <li class="work-pic-item">
@@ -446,5 +450,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -34,10 +34,13 @@
 .footer__first {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-
-  @media screen and (min-width: 480px) {
+  // justify-content: left;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 250px) {
     display: inline-block;
+    // display: flex;
+    // flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {

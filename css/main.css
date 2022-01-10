@@ -380,6 +380,16 @@ img {
   margin-right: 20px;
 }
 
+.mob-social-item::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background-color: var(--color_first);
+  border-radius: 2px;
+  position: absolute;
+  margin-left: 10px;
+}
+
 .mob-bottom {
   margin-top: auto;
 }

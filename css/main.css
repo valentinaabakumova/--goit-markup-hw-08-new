@@ -116,6 +116,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -213,9 +214,10 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: block;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 320px) {
   .logo {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -347,7 +349,7 @@ img {
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: var(--color_first);
+  color: var(--color_accent);
 }
 
 .mob-menu-list-call-item:not(:last-child) {
@@ -360,11 +362,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--color_first);
-}
-
-.mob-menu-link-call:hover,
-.mob-menu-link-call:focus {
-  color: var(--color_accent);
 }
 
 .mob-social-list {
@@ -536,16 +533,13 @@ img {
 }
 
 .benef__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benef__text {
@@ -574,7 +568,13 @@ img {
 }
 
 .doing {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .doing {
+    display: flex;
+  }
 }
 
 .doing__item {
@@ -662,6 +662,7 @@ img {
 
 .team__name {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team__text {
@@ -684,7 +685,6 @@ img {
 .teamsocial__item {
   width: 44px;
   height: 44px;
-  margin-bottom: 30px;
 }
 
 .teamsocial__item + .teamsocial__item {
@@ -866,7 +866,7 @@ img {
   color: #fff;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer-logo {
     margin-left: auto;
     margin-right: auto;
@@ -1276,7 +1276,7 @@ img {
   justify-content: start;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .section-work-list {
     flex-wrap: wrap;
     justify-content: start;
@@ -1406,7 +1406,7 @@ position: absolute !important;
   justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .work-pic-list {
     flex-wrap: wrap;
   }
@@ -1424,7 +1424,7 @@ position: absolute !important;
   position: relative;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .work-pic-item {
     margin-right: 0;
     margin-bottom: 30px;
@@ -1439,7 +1439,7 @@ position: absolute !important;
     justify-content: start;
   }
   .work-pic-item:nth-child(2n + 1) {
-    margin-left: 0;
+    margin-right: 10;
   }
   .work-pic-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
